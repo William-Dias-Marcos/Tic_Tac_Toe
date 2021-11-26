@@ -14,7 +14,10 @@ function  handleClick(event){
     let square = event.target
     let postion = square.id
 
-    handleMove(postion)
+    if (handleMove(postion)) {
+
+        document.getElementById("res").innerHTML = "O jogo terminou"
+    }
     updateSquares()
 }
 
