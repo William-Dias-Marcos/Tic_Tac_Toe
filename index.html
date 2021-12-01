@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Jogo da Velha</title>
 </head>
@@ -35,7 +34,23 @@
         </div>
 
     </div>
-   <h2 id="res"></h2>
+
+
+    <table class="result">
+        <tr>
+            <td>Player O</td>
+            <td class="score">0</td>
+        </tr>
+        <tr>
+            <td>Player X</td>
+            <td class="score">0</td>
+        </tr>
+        <tr>
+            <td>Empate</td>
+            <td id="player-result" value ="0">0</td>
+        </tr>
+    </table>
+   
 
 <script src="./scripts/game.js"></script>
 <script src="./scripts/interface.js"></script>

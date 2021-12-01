@@ -1,15 +1,18 @@
 body{
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
 }
 h1{
-    font-family: 'Abril Fatface', Arial, sans-serif;
-    font-size: 50px;
+    font-family: 'Shadows Into Light', Arial, sans-serif ;
+    font-size: 60px;
+    margin: 10px;
 }
 .square{
     width: 100px;
     height: 100px;
-    background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
     display: inline-block;
 }
 .x {
@@ -21,7 +24,6 @@ h1{
     font-size: 60px;
     inset: 0px;
 }
-
 .o {
     position: relative;
 }
@@ -31,3 +33,17 @@ h1{
     font-size: 60px;
     inset: 0px;
 }
+.result, td ,tr{
+    width: 300px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(255, 255, 255);
+    margin: auto;
+    font-family: 'Shadows Into Light', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+

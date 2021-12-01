@@ -1,6 +1,11 @@
+let squares = document.querySelectorAll(".square")
+
+let score = document.querySelectorAll(".score")
+let scoreO = 0
+let scoreX = 0
+
 document.addEventListener('DOMContentLoaded', () =>{
 
-    let squares = document.querySelectorAll(".square")
 
     squares.forEach((square)=>{
 
@@ -13,17 +18,39 @@ function  handleClick(event){
 
     let square = event.target
     let postion = square.id
-
+   
+    
     if (handleMove(postion)) {
 
-        document.getElementById("res").innerHTML = "O jogo terminou"
+        setTimeout(resetGame,500)
+
+        updateResult(playerTime)
+        
     }
+    updateSquares()
+    
+}
+
+function updateResult(playerTime){
+    
+    playerTime == 0? scoreO ++: scoreX ++;
+    score[0].innerHTML = + scoreO
+    score[1].innerHTML = + scoreX
+}
+
+function resetGame(){
+
+    reset ()
+    squares.forEach((square)=>{
+
+        square.innerHTML = ''
+        
+    })
     updateSquares()
 }
 
-function updateSquares(){
 
-    let squares = document.querySelectorAll(".square")
+function updateSquares(){
 
     squares.forEach((square)=>{
 
@@ -36,3 +63,7 @@ function updateSquares(){
     })
 
 }
+
+
+    
+
