@@ -4,6 +4,8 @@ let gameOver = false
 
 let symbols = ["o", 'x']
 
+let countTurn0 = 0
+let countTurn1 = 0
 
 let winStates = [
     [0,1,2],
@@ -28,8 +30,14 @@ function handleMove (postion){
         gameOver = isWin ()
         
         if(!gameOver){
-           
-            playerTime = (playerTime == 0) ? 1 : 0
+               
+            if (playerTime == 0) {
+                countTurn0++
+                playerTime = 1;
+            } else {
+                countTurn1++
+                playerTime = 0;
+            }
         }
     }
     return gameOver
@@ -37,7 +45,7 @@ function handleMove (postion){
 
 function  isWin(){
 
-    for(let i = 0; i<winStates.length; i++){
+    for(let i = 0; i <winStates.length; i++){
         let seq = winStates[i]
 
         let pos1 = seq[0]
@@ -61,5 +69,8 @@ function reset (){
     playerTime = 0
     
     gameOver = false
+
+    countTurn0 = 0
+    countTurn1 = 0
     
 }
