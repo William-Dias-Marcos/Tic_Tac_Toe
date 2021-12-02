@@ -31,7 +31,7 @@ h1{
     position: absolute;
     content: "\2B55";
     font-size: 60px;
-    inset: 0px;
+    inset: 1px;
 }
 .result, td ,tr{
     width: 300px;
@@ -57,10 +57,12 @@ h1{
         width: 250px;
     }
     .x:after{
-        font-size: 50px;
+        font-size: 40px;
+        inset: 5px;
     }
     .o:after{
-        font-size: 50px;
+        font-size: 40px;
+        inset: 5px;
     }
 
 }
