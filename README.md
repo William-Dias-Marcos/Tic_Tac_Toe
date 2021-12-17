@@ -2,7 +2,7 @@
 
 ## 💻 Sobre o projeto
 
-📝 Tic Tac Toe é um jogo da velha tradicional online.
+🕹 Tic Tac Toe é um jogo da velha tradicional online.
 
 https://william-dias-marcos.github.io/Tic_Tac_Toe/
 
@@ -12,7 +12,7 @@ https://william-dias-marcos.github.io/Tic_Tac_Toe/
 
 - [x] Jogo online, rápido e de fácil jogabilidade:
 - [x] Playes utilizam o mesmo dispositivo para jogar:
-- [x] Tabela que conta automaticamente o némero de vitorias de cada player e os empates:
+- [x] Tabela que conta automaticamente o número de vitórias/ derrotas de cada player além dos empates:
 
 ---
 
